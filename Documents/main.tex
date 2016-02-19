@@ -99,28 +99,27 @@
 		\paragraph\indent
 		\textbf{Critical:}
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item The system needs to be able to save that data in some way.
-				\item There needs to be a way to have access to the web interface
-				\item Must be able to handle max of at least 50 comcurrent users
-				\item Web hosting server
+				\item There must be some web hosting server in order to be able to host a web interface, this interface will be the main 
+				access chanel to the system as it makes it easier ti access the system on a computer or non-Android device. If there is no webserver then there will be no web interface that can be accessed from research groups all over the country. This defeats the whole purpose of the system.
+				\item The web interface needs to be accessible from the Internet preferably so that other research groups outside the University are able to access the system.
+				\item The system needs to be able to save data in some way. If there is no possible way to store data then the system might as well not exist, because the purpose of the sysem is to store metadata about research papers.							
 			\end{list}
 		\paragraph\indent
 		\textbf{Important:}
-		\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-			\item System must be lightweight
-			\item Everyone has a basic
-			\item Be able to download bibliography
-			\item Android app
-			\item Mobile website
-			\item Must create profile manually
-			\item No item should ever be deleted			
+		\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}				
+			\item Users must be able to download a bibliography of papers released in a selected period.
+			\item An Android app must be available that can access the system to make it easier to access the system on the go.			
+			\item Users must create their user profile manually and will not be able to link the system with a web service in order to create their profile.
+			\item No item should ever be deleted in the system. Evrything is kept. Old unaccessed data may be archived but never deleted. There needs to be some sort of recovery or backup system that enables a user to restore accidently deleted data.
+			\item The system must be able to handle a max of at least 50 concurrent users as there is a possiblility that at least 50 users may access the system all at once. There will also be a maximum of at least 1000 users that use the system. The system must be able to handle that amount of users.
 		\end{list}
 		\paragraph\indent
 		\textbf{Nice-to-have:}
 		\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-			\item Show completion of paper in percentage
-			\item Can link with Google Calender
-			\item Every one has a basic profile
+			\item The system must be lightweight.
+			\item The system must show a the completion of a paper in percentage that a user specifies after editing the paper.
+			\item The system may link with Google Calender to synchronise due dates and alerts for the paper a user is busy working on.
+			\item The web interface can be designed to work on mobile phones for those who want to access the system on the go but do not have an Android device.
 		\end{list}
 		
 		\subsection{Use case/Services contracts}
