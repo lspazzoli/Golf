@@ -111,7 +111,7 @@
 			\item An Android app must be available that can access the system to make it easier to access the system on the go.			
 			\item Users must create their user profile manually and will not be able to link the system with a web service in order to create their profile.
 			\item No item should ever be deleted in the system. Evrything is kept. Old unaccessed data may be archived but never deleted. There needs to be some sort of recovery or backup system that enables a user to restore accidently deleted data.
-			\item The system must be able to handle a max of at least 50 concurrent users as there is a possiblility that at least 50 users may access the system all at once. There will also be a maximum of at least 1000 users that use the system. The system must be able to handle that amount of users.
+			\item The system must be able to handle a max of at least 50 concurrent users as there is a possiblility that at least 50 users may access the system all at once. There will also be an estimate of at least a 1000 users. The system must be able to handle that amount of users.
 		\end{list}
 		\paragraph\indent
 		\textbf{Nice-to-have:}
@@ -126,14 +126,15 @@
 			\paragraph\indent
 			\textbf{Pre-Conditions:}
 				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item Item 1
-					\item Item 2
+					\item Only the author(s) of a paper can edit the paper, unless a non-author has been assigned the right to do so.
+					\item Only the authur(s) can view details about the paper, unless a the non-author has been assigned the right to do so.
+					\item Non-users are not authorized to view a paper.
 				\end{list}
 			\paragraph\indent
 			\textbf{Post-Conditions:}
 				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item Item 1
-					\item Item 2
+					\item Once an author as been assigned to a paper they have to remain as an author of that paper in order to continue viewing and editing it.
+					\item Once a user has closed their account they will lose access to the papers they had access to.
 				\end{list}
 			\paragraph\indent
 			\textbf{Request and Results Data Structures:}
