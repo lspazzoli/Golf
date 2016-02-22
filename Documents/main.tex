@@ -55,6 +55,9 @@
 		The client requires a system that would allow them to retrieve and submit meta-data about academic papers published by the department of computer science at the University of Pretoria. Certain users would be able to create new papers and the project leader would then be able to control certain properties of the project, like the current progress of the paper. It should also have a web interface where changes can be made and also an Android app.
 
 	\section{Background}
+		\paragraph\indent
+		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfil its task of storing details about user�s publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible.
+
 	
 	\section{Architecture Requirements}
 		\subsection{Access channel requirements}
@@ -71,7 +74,7 @@
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
 				\item \textbf{Scalability:} About a 1000 users will use the system.
 				\item \textbf{Security:} Passwords will be hashed with the SHA512 hashing algorithm.
-				\item \textbf{Reliability:} An automatic full dump backup will be done everyday at 03:00 and each back up will be kept for a week.
+				\item \textbf{Reliability:} An automatic partial dump backup will be done everyday at 03:00 and each back up will be kept for a week. On top of this a full dump will be done every 3 days and will be kept for 2 weeks.
 				\item \textbf{Auditability:} Every change should be logged and the person responsable for that log will be recorded. This will allow the administrators to track which users change what.
 				\item \textbf{Maintainability:} Data that is deleted will only be moved to another database that might be a little slower. This will help alleviate some pressure off the main database.
 				\item \textbf{Cost:} The total hours is estimated to be 120 at a cost of R500 per hour.

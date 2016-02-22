@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.22)  22 FEB 2016 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.22)  22 FEB 2016 18:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -200,24 +200,24 @@ Package pdftex.def Info: up_logo.png used on input line 41.
 {C:/Users/Armand Maree/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./up
 _logo.png>] (main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 8.
+(Font)              <7> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 8.
+(Font)              <5> on input line 9.
 )
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  [2] [1]
-Overfull \hbox (1.07353pt too wide) in paragraph at lines 98--98
+Overfull \hbox (1.07353pt too wide) in paragraph at lines 101--101
 []\T1/cmr/bx/n/14.4 Functional re-quire-ments and ap-pli-ca-tion de-sign 
  []
 
 [2] [3] <5.2.png, id=27, 598.235pt x 420.57124pt>
 File: 5.2.png Graphic file (type png)
  <use 5.2.png>
-Package pdftex.def Info: 5.2.png used on input line 143.
+Package pdftex.def Info: 5.2.png used on input line 146.
 (pdftex.def)             Requested size: 345.0pt x 242.54533pt.
- [4 <./5.2.png>] (main.aux) ) 
+ [4 <./5.2.png>] [5] (main.aux) ) 
 Here is how much of TeX's memory you used:
  2095 strings out of 493634
  29482 string characters out of 3132381
@@ -225,22 +225,22 @@ Here is how much of TeX's memory you used:
  5468 multiletter control sequences out of 15000+200000
  12844 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,6n,23p,478b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Armand Maree\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Arman
-d Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
-> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
-pi600\ecbx1440.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Armand Maree\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users
-\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1
-728.pk><C:/Users/Armand Maree/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (6 pages, 262489 bytes).
+ 36i,6n,23p,916b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Armand Maree\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Armand Maree\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\A
+rmand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx100
+0.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecbx1440.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\Armand Maree\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Armand Maree
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\U
+sers\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+crm1728.pk><C:/Users/Armand Maree/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (7 pages, 265238 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
+ 331 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
