@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.22)  22 FEB 2016 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.22)  23 FEB 2016 14:18
 entering extended mode
 **./main.tex
 (main.tex
@@ -212,35 +212,49 @@ Overfull \hbox (1.07353pt too wide) in paragraph at lines 101--101
 []\T1/cmr/bx/n/14.4 Functional re-quire-ments and ap-pli-ca-tion de-sign 
  []
 
-[2] [3] <5.2.png, id=27, 598.235pt x 420.57124pt>
+[2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+
+
+("C:\Users\Armand Maree\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr
+.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+ [4] <5.2.png, id=30, 481.8pt x 446.66875pt>
 File: 5.2.png Graphic file (type png)
  <use 5.2.png>
-Package pdftex.def Info: 5.2.png used on input line 146.
-(pdftex.def)             Requested size: 345.0pt x 242.54533pt.
- [4 <./5.2.png>] [5] (main.aux) ) 
+Package pdftex.def Info: 5.2.png used on input line 212.
+(pdftex.def)             Requested size: 345.0pt x 319.84964pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] [6 <./5.2.png (PNG copy)>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2095 strings out of 493634
- 29482 string characters out of 3132381
- 90773 words of memory out of 3000000
- 5468 multiletter control sequences out of 15000+200000
+ 2112 strings out of 493634
+ 29825 string characters out of 3132381
+ 91773 words of memory out of 3000000
+ 5482 multiletter control sequences out of 15000+200000
  12844 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,6n,23p,916b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Armand Maree\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Armand Maree\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\A
-rmand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx100
-0.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecbx1440.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\Armand Maree\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Armand Maree
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\U
-sers\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1728.pk><C:/Users/Armand Maree/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (7 pages, 265238 bytes).
+ 36i,6n,23p,914b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Armand Maree\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Armand M
+aree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <
+C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecbx1000.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\Armand Maree\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Ar
+mand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200
+.pk> <C:\Users\Armand Maree\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecrm1728.pk><C:/Users/Armand Maree/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (8 pages, 180916 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
+ 339 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
