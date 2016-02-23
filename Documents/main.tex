@@ -56,7 +56,7 @@
 
 	\section{Background}
 		\paragraph\indent
-		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfil its task of storing details about user�s publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible.
+		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfil its task of storing details about user's publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible.
 
 	
 	\section{Architecture Requirements}
@@ -128,22 +128,89 @@
 		
 		\subsection{Use case/Services contracts}
 			\paragraph\indent
-			\textbf{Pre-Conditions:}
-				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item Only the author(s) of a paper can edit the paper, unless a non-author has been assigned the right to do so.
-					\item Only the authur(s) can view details about the paper, unless a the non-author has been assigned the right to do so.
-					\item Non-users are not authorized to view a paper.
-				\end{list}
-			\paragraph\indent
-			\textbf{Post-Conditions:}
-				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item Once an author as been assigned to a paper they have to remain as an author of that paper in order to continue viewing and editing it.
-					\item Once a user has closed their account they will lose access to the papers they had access to.
-				\end{list}
+			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+				\item\textbf{Use Case:} Add a paper.
+				
+				\textbf{Primary Actor:} Registered author or HOD.
+				
+				\textbf{Brief:} Only an author or head of department can add new papers.
+				
+				\textbf{Postconditions:}
+				\begin{itemize}
+					\item The article is saved to the database.
+					\item All authors are notified of their new paper.
+					\item The changes are logged.
+					\item Paper is displayed.
+				\end{itemize}
+				
+				\textbf{Triggers:} The user invokes the Add New Paper request.
+				
+				\textbf{Basic flow:}
+				\begin{enumerate}
+					\item Present the actor with a new paper form.
+					\item Actor fill in the form and clicks submit.
+					\item The data is sent to the server and added to the database and logs the event.
+					\item Actor is presented with a success message.
+					\item Paper is presented to the actor.
+					\item Authors are notified.
+				\end{enumerate}
+				
+				\item\textbf{Use Case:} Editing a paper.
+				
+				\textbf{Primary Actor:} Author of paper or HOD.
+				
+				\textbf{Brief:} Only an author involved with the paper or head of department can edit the paper.
+				
+				\textbf{Preconditions:}
+					\begin{itemize}
+						\item Author is presented with the paper in edit mode.
+					\end{itemize}
+				
+				\textbf{Postconditions:}
+					\begin{itemize}
+						\item The article is saved to the database.
+						\item All authors are notified of the changes.
+						\item The changes are logged.
+						\item Paper is displayed.
+					\end{itemize}
+					
+				\textbf{Triggers:} The user invokes the Edit Paper request.
+				
+				\textbf{Basic flow:}
+					\begin{enumerate}
+						\item Present the actor with the paper in edit mode.
+						\item Actor makes all desired changes and clicks submit.
+						\item The data is sent to the server and added to the database and logs the event.
+						\item Actor is presented with a success message.
+						\item Paper is presented to the actor.
+						\item Authors are notified.
+					\end{enumerate}
+					
+					\item\textbf{Use Case:} Viewing a paper.
+					
+					\textbf{Primary Actor:} Author of paper or HOD.
+					
+					\textbf{Brief:} Only an author involved with the paper or head of department can view the paper.
+					
+					\textbf{Preconditions:}
+					\begin{itemize}
+						\item Author is presented with the paper in read-only mode.
+					\end{itemize}
+					
+					\textbf{Triggers:} The user invokes the View Paper request.
+					
+					\textbf{Basic flow:}
+					\begin{enumerate}
+						\item Present the actor with the paper in read-only mode.
+						\item When the actor is done viewing they simply navigate away. No changes or events has to be logged.
+					\end{enumerate}
+			\end{list}
 			\paragraph\indent
 			\textbf{Request and Results Data Structures:}
+				See figure 1.
 				\begin{figure}[!h]
 					\includegraphics[width=\linewidth]{5.2.png}
+					\caption{UML diagram for Request and Results Data Structure.}
 				\end{figure}
 
 		\subsection{Required functionality}
