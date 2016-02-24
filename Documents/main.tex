@@ -208,19 +208,35 @@
 			\paragraph\indent
 			\textbf{Request and Results Data Structures:}
 				See figure 1.
-				\begin{figure}[!h]
+				\begin{figure}[H]
+					\centering
 					\includegraphics[width=\linewidth]{5.2.png}
 					\caption{UML diagram for Request and Results Data Structure.}
+					\label{fig:picture}
 				\end{figure}
 
 		\subsection{Required functionality}
-			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item Data to be entered into the system:
-				\item Operations performed by each screen:
-				\item Work-flows performed by the system:
-				\item Descriptions of system reports or other outputs:
-				\item Who can enter the data into the system:
-				\item How the system meets applicable regulatory requirements:
+			\begin{list}{}{\leftmargin=1.5cm \itemindent=0em \textbf}
+				\item\textbf {Data to be entered into the system:}
+					\begin{itemize}
+						\item Author(details of the people working on the journal).
+						\item Cooperate author(details of other people helping on the document).
+						\item Title and Journal name(Title of the journal, Description of the article).
+						\item year(The current year of when the journal is being edited or created).
+						\item pages(The number of current pages of the journal article).
+						\item Date Time(when was the articles data last modified).
+						\item Department(To which department does the journal belong).
+					\end{itemize}
+				\item\textbf {Operations performed by each screen:}
+					\begin{itemize}
+						\item There is a screen for the author of the document, the author cannot delete the journal articles data on the system. But can add more cooperate authors to work on the document, the author can also remove cooperate authors.
+						\item If the editor of the document is not the author, they do not have control on the document unless they are the authors. they can read or edit, the cannot delete anything.
+						\item Department can only view the progress of the colleague, They can also be an author and create projects for the colleagues.
+					\end{itemize}
+				\item\textbf {Work-flows performed by the system:}
+				\item\textbf {Descriptions of system reports or other outputs:}
+				\item\textbf {Who can enter the data into the system:}
+				\item\textbf {How the system meets applicable regulatory requirements:}
 			\end{list}
 				
 		\subsection{Process specifications}
