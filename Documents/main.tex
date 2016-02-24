@@ -56,7 +56,7 @@
 
 	\section{Background}
 		\paragraph\indent
-		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfil its task of storing details about user's publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible.
+		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfill its task of storing details about user's publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible.
 
 	
 	\section{Architecture Requirements}
@@ -75,7 +75,7 @@
 				\item \textbf{Scalability:} About a 1000 users will use the system.
 				\item \textbf{Security:} Passwords will be hashed with the SHA512 hashing algorithm.
 				\item \textbf{Reliability:} An automatic partial dump backup will be done everyday at 03:00 and each back up will be kept for a week. On top of this a full dump will be done every 3 days and will be kept for 2 weeks.
-				\item \textbf{Auditability:} Every change should be logged and the person responsable for that log will be recorded. This will allow the administrators to track which users change what.
+				\item \textbf{Audibility:} Every change should be logged and the person responsible for that log will be recorded. This will allow the administrators to track which users change what.
 				\item \textbf{Maintainability:} Data that is deleted will only be moved to another database that might be a little slower. This will help alleviate some pressure off the main database.
 				\item \textbf{Cost:} The total hours is estimated to be 120 at a cost of R500 per hour.
 			\end{list}
@@ -91,7 +91,7 @@
 			Some quality requirements that has to be considered are:
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
 				\item \textbf{Security:} The data that is sent over the internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
-				\item \textbf{Reliability:} The reliability of the transfer of the data is dependant on the reliability of the internet connection.
+				\item \textbf{Reliability:} The reliability of the transfer of the data is dependent on the reliability of the internet connection.
 			\end{list}
 		\subsection{Architecture constraints}
 			\paragraph\indent
@@ -104,9 +104,9 @@
 		\textbf{Critical:}
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
 				\item There must be some web hosting server in order to be able to host a web interface, this interface will be the main 
-				access chanel to the system as it makes it easier ti access the system on a computer or non-Android device. If there is no webserver then there will be no web interface that can be accessed from research groups all over the country. This defeats the whole purpose of the system.
+				access channel to the system as it makes it easier ti access the system on a computer or non-Android device. If there is no web-server then there will be no web interface that can be accessed from research groups all over the country. This defeats the whole purpose of the system.
 				\item The web interface needs to be accessible from the Internet preferably so that other research groups outside the University are able to access the system.
-				\item The system needs to be able to save data in some way. If there is no possible way to store data then the system might as well not exist, because the purpose of the sysem is to store metadata about research papers.							
+				\item The system needs to be able to save data in some way. If there is no possible way to store data then the system might as well not exist, because the purpose of the system is to store meta data about research papers.							
 			\end{list}
 		\paragraph\indent
 		\textbf{Important:}
@@ -214,14 +214,26 @@
 				\end{figure}
 
 		\subsection{Required functionality}
-			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item Data to be entered into the system:
-				\item Operations performed by each screen:
-				\item Work-flows performed by the system:
-				\item Descriptions of system reports or other outputs:
-				\item Who can enter the data into the system:
-				\item How the system meets applicable regulatory requirements:
-			\end{list}
+			\begin{itemize}
+				\item	Add a paper Use case: See figure 2
+				\item   Edit a paper Use case: See figure 3
+				\item   View a paper Use case: See figure 4
+				\begin{figure}
+					\includegraphics[width=\linewidth]{Add A Paper Use Case}
+					\caption{Use case diagram for adding a paper}
+				\end{figure}
+				
+				\begin{figure}
+					\includegraphics[width=\linewidth]{Edit a Paper Use Case}
+					\caption{Use case diagram for editing a paper}
+				\end{figure}
+				
+				\begin{figure}
+					\includegraphics[width=\linewidth]{View a paper Use Case}
+					\caption{Use case diagram for viewing a paper}
+				\end{figure}
+				
+			\end{itemize}
 				
 		\subsection{Process specifications}
 
@@ -229,7 +241,6 @@
 
 	\section{Open Issues}
 		\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-			\item Item 1
-			\item Item 2
+			\item To be determined
 		\end{list}
 \end{document}
