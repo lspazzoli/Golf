@@ -56,7 +56,7 @@
 
 	\section{Background}
 		\paragraph\indent
-		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfill its task of storing details about user's publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible. The lack of ability to easily access previously entered user information data such as one’s username or contact details also was a factor that lead to this project, as it would be more convenient and efficient to have to have an interface that would for example have a drop down list of all the user information data on the system.
+		 What lead to the project is the fact that that the client is facing a problem with the current system they are using.  The spreadsheet which does fulfill its task of storing details about user's publications, does not have a user friendly interface, and does not allow researchers to see any changes made to the system immediately, it is also not a concurrent system and is deemed less reliable.  The client wants a system that would improve the manner the users would be able to view their submissions and be able to modify the system to their liking, with changes immediately visible to researchers. Another aspect which lead to the development of a new system which would simplify the collaboration between the University of Pretoria users and users from other universities, is that instead of having a system which is local; a web interface could be used which is more accessible. The lack of ability to easily access previously entered user information data such as oneâ€™s username or contact details also was a factor that lead to this project, as it would be more convenient and efficient to have to have an interface that would for example have a drop down list of all the user information data on the system.
 
 	
 	\section{Architecture Requirements}
@@ -64,35 +64,32 @@
 			\paragraph\indent
 			The system requires 2 interfaces:
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item Web interface
-				\item Android app
+				\item Item 1
+				\item Item 2
 			\end{list}
 
 		\subsection{Quality requirements}
 			\paragraph\indent
 			The following quality aspects needs to be addressed:
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item \textbf{Scalability:} About a 1000 users will use the system.
-				\item \textbf{Security:} Passwords will be hashed with the SHA512 hashing algorithm.
-				\item \textbf{Reliability:} An automatic partial dump backup will be done everyday at 03:00 and each back up will be kept for a week. On top of this a full dump will be done every 3 days and will be kept for 2 weeks.
-				\item \textbf{Audibility:} Every change should be logged and the person responsible for that log will be recorded. This will allow the administrators to track which users change what.
-				\item \textbf{Maintainability:} Data that is deleted will only be moved to another database that might be a little slower. This will help alleviate some pressure off the main database.
-				\item \textbf{Cost:} The total hours is estimated to be 120 at a cost of R500 per hour.
+				\item \textbf{Scalability:} 
+				\item \textbf{Security:} 
+				\item \textbf{Reliability:} 
+				\item \textbf{Audibility:} 
+				\item \textbf{Maintainability:} 
+				\item \textbf{Cost:} 
 			\end{list}
 			
 		\subsection{Integration requirements}
 			\paragraph\indent
-			The system should allow universities to connect to each other using an API. This would allow them to collaborate on projects and also to track the papers that are being written. The Android app should also be able to connect to the server via the API.
+			Paragraph here
 			
 			\paragraph\indent
-			The protocol that will be used to transfer the data between the server and the clients will be the Hyper Text Transfer Protocol Secure (HTTPS). And the third parties that integrate with the system will access it either through the web interface, the mobile app or the provided API.
+			Paragraph here
 			
 			\paragraph\indent
-			Some quality requirements that have to be considered are:
-			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item \textbf{Security:} The data that is sent over the internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
-				\item \textbf{Reliability:} The reliability of the transfer of the data is dependent on the reliability of the internet connection.
-			\end{list}
+			Paragraph here
+			
 		\subsection{Architecture constraints}
 			\paragraph\indent
 			There are currently no architecture constraints that the client mentioned.
