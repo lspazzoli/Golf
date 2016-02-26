@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.17)  26 FEB 2016 16:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.17)  26 FEB 2016 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -241,7 +241,7 @@ File: Activity diagram-Add a paper.png Graphic file (type png)
 
 <use Activity diagram-Add a paper.png>
 Package pdftex.def Info: Activity diagram-Add a paper.png used on input line 24
-1.
+2.
 (pdftex.def)             Requested size: 345.0pt x 240.1451pt.
 
 <Activity diagram_Edit a paper.png, id=40, 743.77875pt x 400.49625pt>
@@ -249,40 +249,46 @@ File: Activity diagram_Edit a paper.png Graphic file (type png)
 
 <use Activity diagram_Edit a paper.png>
 Package pdftex.def Info: Activity diagram_Edit a paper.png used on input line 2
-45.
+46.
 (pdftex.def)             Requested size: 345.0pt x 185.7705pt.
 
 <Activity.Login.jpg, id=41, 927.465pt x 283.0575pt>
 File: Activity.Login.jpg Graphic file (type jpg)
  <use Activity.Login.jpg>
-Package pdftex.def Info: Activity.Login.jpg used on input line 249.
+Package pdftex.def Info: Activity.Login.jpg used on input line 250.
 (pdftex.def)             Requested size: 345.0pt x 105.2911pt.
+
+<Request.Paper.jpg, id=42, 764.8575pt x 241.90375pt>
+File: Request.Paper.jpg Graphic file (type jpg)
+ <use Request.Paper.jpg>
+Package pdftex.def Info: Request.Paper.jpg used on input line 254.
+(pdftex.def)             Requested size: 345.0pt x 109.11406pt.
 
 [6 <./Add A Paper Use Case.png (PNG copy)>] [7 <./Edit a Paper Use Case.png (PN
 G copy)> <./View a paper Use Case.png (PNG copy)>] [8 <./Activity diagram-Add a
  paper.png (PNG copy)> <./Activity diagram_Edit a paper.png (PNG copy)>]
-[9 <./Activity.Login.jpg>] (./main.aux) ) 
+[9 <./Activity.Login.jpg> <./Request.Paper.jpg>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2237 strings out of 495028
- 31103 string characters out of 6181497
+ 2242 strings out of 495028
+ 31213 string characters out of 6181497
  89662 words of memory out of 5000000
- 5421 multiletter control sequences out of 15000+600000
+ 5426 multiletter control sequences out of 15000+600000
  12844 words of font info for 32 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,6n,23p,1247b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/patrick/.texmf-var/fonts/pk/lj
-four/jknappen/ec/ecbx1200.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm1000.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1000.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.6
-00pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </h
-ome/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/patri
-ck/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/patrick/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (11 pages, 279094 bytes).
+ </home/patrick/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/patrick/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/patrick/.texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecbx1000.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/
+jknappen/ec/ecbx1440.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/
+ec/ectt1200.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm09
+00.600pk> </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk>
+ </home/patrick/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (11 pages, 301024 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
+ 357 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
