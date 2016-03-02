@@ -25,6 +25,6 @@
 \contentsline {paragraph}{\indent }{3}
 \contentsline {paragraph}{\indent }{5}
 \contentsline {subsection}{\numberline {5.3}Required functionality}{5}
-\contentsline {subsection}{\numberline {5.4}Process specifications}{6}
-\contentsline {subsection}{\numberline {5.5}Domain Model}{6}
-\contentsline {section}{\numberline {6}Open Issues}{6}
+\contentsline {subsection}{\numberline {5.4}Process specifications}{5}
+\contentsline {subsection}{\numberline {5.5}Domain Model}{5}
+\contentsline {section}{\numberline {6}Open Issues}{5}
