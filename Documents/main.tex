@@ -34,7 +34,7 @@
 	\large Name of project\\
 	\small Version: 1.0}
 \date{\today}
-
+\graphicspath{{Pictures/}}
 \begin{document}
 	\maketitle
 	\begin{figure}[!t]
@@ -74,21 +74,25 @@
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
 				\item \textbf{Scalability:} Less a 100 users will use the system.
 				\item \textbf{Security:} Passwords will be hashed with the SHA512 hashing algorithm.
-				\item \textbf{Reliability:} An automatic partial dump backup will be done everyday at 03:00 and each back up will be kept for a week. On top of this a full dump will be done every 3 days and will be kept for 2 weeks.
+				\item \textbf{Reliability:} An automatic partial dump backup will be done everyday at 03:00 and each back up will be kept for a week. On top of this a full dump will be done every 3 days and will be kept for 2 weeks. Alternatively the backup will be done by an external program. 
 				\item \textbf{Audibility:} Every change should be logged and the person responsible for that log will be recorded. This will allow the administrators to track which users change what.
 				\item \textbf{Maintainability:} Data that is deleted will only be moved to another database that might be a little slower. This will help alleviate some pressure off the main database.
 				\item \textbf{Cost:} The total hours is estimated to be 120 at a cost of R500 per hour.
 			\end{list}
 			
-		\subsection{Integration requirements}
+			\subsection{Integration requirements}
 			\paragraph\indent
-			Paragraph here
+			The system should allow universities to connect to each other using an API. This would allow them to collaborate on projects and also to track the papers that are being written. The Android app should also be able to connect to the server via the API.
 			
 			\paragraph\indent
-			Paragraph here
+			The protocol that will be used to transfer the data between the server and the clients will be the Hyper Text Transfer Protocol Secure (HTTPS). And the third parties that integrate with the system will access it either through the web interface, the mobile app or the provided API.
 			
 			\paragraph\indent
-			Paragraph here
+			Some quality requirements that have to be considered are:
+			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+				\item \textbf{Security:} The data that is sent over the internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
+				\item \textbf{Reliability:} The reliability of the transfer of the data is dependent on the reliability of the internet connection.
+			\end{list}
 			
 		\subsection{Architecture constraints}
 			\paragraph\indent
@@ -251,7 +255,7 @@
 					\caption{Login to system}
 				\end{figure}
 				\begin{figure}
-					\includegraphics[width=\linewidth]{Request.Paper.jpg}
+					\includegraphics[width=\linewidth]{Pictures/Request.Paper.jpg}
 					\caption{Request paper details}
 				\end{figure}
 			\end{itemize}
