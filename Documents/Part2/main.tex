@@ -90,8 +90,8 @@
 			\paragraph\indent
 				Some quality requirements that have to be considered are:
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item \textbf{Security:} The data that is sent over the Internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
-				\item \textbf{Reliability:} The reliability of the transfer of the data is dependent on the reliability of the Internet connection.
+				\item \textbf{Security:} The data that is sent over the internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
+				\item \textbf{Reliability:} The reliability of the transfer of the data is dependent on the reliability of the internet connection.
 			\end{list}
 			
 		\subsection{Architecture constraints}
@@ -114,15 +114,15 @@
 				\item Users must be able to download a bibliography of papers released in a selected period.
 				\item An Android app must be available that can access the system to make it easier to access the system on the go.			
 				\item Users must create their user profile manually and will not be able to link the system with a web service in order to create their profile.
-				\item No item should ever be deleted in the system. Everything is kept. Old unaccessed data may be archived but never deleted. There needs to be some sort of recovery or backup system that enables a user to restore accidentally deleted data.
-				\item The system must be able to handle a max of at least 50 concurrent users as there is a possibility that at least 50 users may access the system all at once. There will also be an estimate of at least a 1000 users. The system must be able to handle that amount of users.
+				\item No item should ever be deleted in the system. Everything is kept. Old unaccessed data may be archived but never deleted. There needs to be some sort of recovery or backup system that enables a user to restore accidently deleted data.
+				\item The system must be able to handle a max of at least 50 concurrent users as there is a possiblility that at least 50 users may access the system all at once. There will also be an estimate of at least a 1000 users. The system must be able to handle that amount of users.
 			\end{list}
 			\paragraph\indent
 			\textbf{Nice-to-have:}
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
 				\item The system must be lightweight.
 				\item The system must show the completion of a paper in percentage that a user specifies after editing the paper.
-				\item The system may link with Google Calender to synchronize due dates and alerts for the paper a user is busy working on.
+				\item The system may link with Google Calender to synchronise due dates and alerts for the paper a user is busy working on.
 				\item The web interface can be designed to work on mobile phones for those who want to access the system on the go but do not have an Android device.
 			\end{list}
 		
@@ -267,34 +267,14 @@
 			\clearpage
 	\section{Software Architecture Documentation}
 		\subsection{Architecture requirements}
-			\paragraph\indent
-			This section will extract the architectural requirements from the software requirements.
-				\subsubsection{Architectural scope}
-					\paragraph\indent
-					The architectural responsibilities that need to be handled by the software architecture are as follows:
-							\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-								\item A main database that will store the papers that are added.
-								\item A secondary database (separate from the first) that will act as the backup database where the partial and complete dumps will be stored.
-								\item An infrastructure that will allow for notification to contributing authors that changes have been made to a paper they collaborated on, this infrastructure will also create a log of changes and who made them so that there is accountability.
-								\item An infrastructure that will allow the users of the system to create and add papers to the database mentioned above as well as being able to edit and view them later.
-								\item A mobile version of the above previously mentioned infrastructure must also exist. 
-							\end{list}
-				\subsubsection{Quality requirements}
-					\paragraph\indent
-					In order of importance our quality requirements are:
-						\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-								\item \textbf{Reliability:} This is highly important as this might be the only place research could be backed up to, therefore, the system needs to be reliable. Reliability in this system is measured against the effectiveness of the backup measures in place as well as the system be available on demand.  
-								\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use.
-								\item \textbf{Audibility:} This is measured in terms of is every change noted and logged somewhere.
-								\item \textbf{Scalability:} There will not be a huge amount of users making use of the system but it is important that if need be every user can make use of the system concurrently.
-								\item \textbf{Maintainability:} Measured against how effectively the system choses to relocate data due to age.
-						\end{list}
-				\subsubsection{Integration and access channel requirements}
-					\paragraph\indent
-						The system should be accessible to registered users easily through a web interface as well as a mobile (android) application. In terms of integration; the android application will need to be able to communicate with server so as to retrieve and update files on the server. The protocols that will be used will be HTTPS to send data to the server securely to increase this, the data will be sent over an SSL. On the back-end there will be a database storing all the users and papers so the Web and Mobile interfaces will need to be able to query those databases so a query language such as SQL will have to be implemented. 
-				\subsubsection{Architectural constraints}
-					\paragraph\indent
-						Currently we have no architectural constraints.
+		
+			\subsubsection{Architectural scope}
+			
+			\subsubsection{Quality requirements}
+			
+			\subsubsection{Integration and access channel requirements}
+			
+			\subsubsection{Architectural constraints}
 			
 		\subsection{Architectural patterns or styles}
 		
@@ -305,20 +285,31 @@
 			\paragraph{Exception handling}\indent
 			Exceptions should be dealt with as soon as and as best as possible, but since it cannot be afforded that the system crashes there should be some form of "last resort" that attempts to deal with unhandled exceptions in such a way that the system as a whole keep functioning.
 			
-			\paragraph{Passive Redundancy}\indent
+			\paragraph{Passive Redundency}\indent
 			There will be 2 databases that will both contain all the information. This will increase the reliability of the system by having a back up database that can take over at any point when the primary database fails. This will be transparent to the user.
 			
 			\paragraph{Transactions}\indent
 			Changes to the database will be done in transactions that will allow any changes to be rolled back to s checkpoint should an error occur. This will cause atomicity in the system and increase reliability.
 			
 			\paragraph{Security}\indent
-			Encryption to increase security HTTPS protocols will be used to transmit data and all private information (like passwords) will be hashed using the SHA512 hashing algorithm.
+			Encryption to increase security https protocols will be used to transmit data and all private information (like passwords) will be hashed using the SHA512 hashing algorithm.
 			
-			\paragraph{Integrability}\indent
-			In order to increase integrability a modular approach will be taken when implementing the system by using dependency injection as far as possible.
+			\paragraph{Interatability}\indent
+			In order to increase interatability a modular approach will be taken when implementing the system by using dependency injection as far as possile.
 			
 		\subsection{Use of reference architectures and frameworks}
-		
+			\paragraph\indent The frameworks listed here all reduce development time and cost of the system.
+			\newpage
+			The first framework to be used is Bootstrap for styling the Web interface. The reason for this is because Bootstrap makes web styling much easier and faster than just trying to use pure CSS. It also helps a lot with alignment that will help a lot with tables and follows a mobile first and responsive approach, this means that it will be a lot easier to develop a website that works both on mobile devices and desktops.
+			\newline\newline
+			AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. The reason we use AngularJS is because it feaures dependency injection, along with mocking framework for unit testing among other things.
+			AngularJS also features quick prototyping and easy testability.
+			\newline\newline
+			PhoneGap (renamed to Apache Cordova, we will use PhoneGap in this document) will be used as a wrapper for the above website in mobile form. Because the client only needs an interface for an Android app and all major processing and storing will be done on a server, advanced native Android code is not needed. This again reduces development time because a responsive website already exists thanks to Bootstrap and UI Bootstrap. And PhoneGap makes the app cross-platform as a bonus. Finally a lot of plugins exists that can improve the functionality on top of a 'normal' webpage.
+			\newline\newline
+			Ionic framework will be used together with AngularJS and PhoneGap in the place of Bootstrap. This is because Ionic enables much easier GUI design and a more responsive hybrid app. The reasonit will replace Bootstrap for the mobile app is because Bootstrap and Ionic do not play well because of name conflicts.
+			\newline\newline
+			Finally Spring framework will be used on the backend for the server. Because Spring is built on Java EE it means Java can be used for the server. Some advantages this has over normal PHP is that Java is faster than PHP, especially now that the modern JVM is much faster. Java also has better integration support than PHP. And ofcourse the Spring framework makes it much easier to develop the backend and include depenency injection.
 		\subsection{Access and integration channels}
 		
 		\subsection{Technologies}
