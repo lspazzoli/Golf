@@ -267,10 +267,28 @@
 			\clearpage
 	\section{Software Architecture Documentation}
 		\subsection{Architecture requirements}
-		
+
 			\subsubsection{Architectural scope}
 			
+				\paragraph\indent
+				The architectural responsibilities that need to be handled by the software architecture are as follows:
+				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+					\item A main database that will store the papers that are added.
+					\item A secondary database (separate from the first) that will act as the backup database where the partial and complete dumps will be stored.
+					\item An infrastructure that will allow for notification to contributing authors that changes have been made to a paper they collaborated on, this infrastructure will also create a log of changes and who made them so that there is accountability.
+					\item An infrastructure that will allow the users of the system to create and add papers to the database mentioned above as well as being able to edit and view them later.
+					\item A mobile version of the above previously mentioned infrastructure must also exist. 
+				\end{list}
 			\subsubsection{Quality requirements}
+				\paragraph\indent
+				In order of importance our quality requirements are:
+				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+					\item \textbf{Reliability:} This is highly important as this might be the only place research could be backed up to, therefore, the system needs to be reliable. Reliability in this system is measured against the effectiveness of the backup measures in place as well as the system be available on demand.  
+					\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use.
+					\item \textbf{Audibility:} This is measured in terms of is every change noted and logged somewhere.
+					\item \textbf{Scalability:} There will not be a huge amount of users making use of the system but it is important that if need be every user can make use of the system concurrently.
+					\item \textbf{Maintainability:} Measured against how effectively the system choses to relocate data due to age.
+				\end{list}
 			
 			\subsubsection{Integration and access channel requirements}
 			
