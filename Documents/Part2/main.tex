@@ -267,14 +267,23 @@
 			\clearpage
 	\section{Software Architecture Documentation}
 		\subsection{Architecture requirements}
-		
-			\subsubsection{Architectural scope}
+			\paragraph\indent
+			This section will extract the architectural requirements from the software requirements.
+				\subsubsection{Architectural scope}
+					\paragraph\indent
+					The architectural responsibilities that need to be handled by the software architecture are as follows:
+							\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+								\item A main database that will store the papers that are added.
+								\item A secondary database (separate from the first) that will act as the backup database where the partial and complete dumps will be stored.
+								\item An infrastructure that will allow for notification to contributing authors that changes have been made to a paper they collaborated on, this infrastructure will also create a log of changes and who made them so that there is accountability.
+								\item An infrastructure that will allow the users of the system to create and add papers to the database mentioned above as well as being able to edit and view them later.
+								\item A mobile version of the above previously mentioned infrastructure must also exist. 
+							\end{list}
+				\subsubsection{Quality requirements}
+				
+				\subsubsection{Integration and access channel requirements}
 			
-			\subsubsection{Quality requirements}
-			
-			\subsubsection{Integration and access channel requirements}
-			
-			\subsubsection{Architectural constraints}
+				\subsubsection{Architectural constraints}
 			
 		\subsection{Architectural patterns or styles}
 		
