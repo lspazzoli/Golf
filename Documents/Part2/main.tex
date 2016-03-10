@@ -283,11 +283,11 @@
 				\paragraph\indent
 				In order of importance our quality requirements are:
 				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item \textbf{Reliability:} This is highly important as this might be the only place research could be backed up to, therefore, the system needs to be reliable. Reliability in this system is measured against the effectiveness of the backup measures in place as well as the system be available on demand.  
-					\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use.
-					\item \textbf{Audibility:} This is measured in terms of is every change noted and logged somewhere.
-					\item \textbf{Scalability:} There will not be a huge amount of users making use of the system but it is important that if need be every user can make use of the system concurrently.
-					\item \textbf{Maintainability:} Measured against how effectively the system choses to relocate data due to age.
+					\item \textbf{Reliability:} This is highly important as this might be the only place research could be backed up to, therefore, the system needs to be reliable. Reliability in this system is measured against the effectiveness of the backup measures in place as well as the system be available on demand. This will be achieved by an automatic partial dump backup occurring daily in the early hours of the morning and a full dump once every 3 days.
+					\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use, therefore, passwords will be secured using the SHA512 hashing algorithm.
+					\item \textbf{Audibility:} This is measured in terms of is every change noted and logged somewhere. This will be done through means of recording, when a change is made, the system will log the change as well as the user name that submitted the change, therefore everyone will be held accountable.
+					\item \textbf{Scalability:} There will not be a huge amount of users making use of the system but it is important that if need be every user can make use of the system concurrently. This will be achieved by implementing the system in such a way that it is multi-threaded. In terms of two users trying work on the same paper simultaneously, when a user tries to upload an edited version of the paper, if the version on the system differs from the original document then the user will be alerted that there is a synchronization error and he should update the local version of the document and add the changes. This will avoid data corruption.
+					\item \textbf{Maintainability:} Measured against how effectively the system choses to relocate data due to age. When data has been on the system for a predetermined length of time, it will be moved from the main system and relocated to a different (most likely slower) database and if a user wishes to make use of it again it can be called from there.
 				\end{list}
 			
 			\subsubsection{Integration and access channel requirements}
