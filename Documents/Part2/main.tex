@@ -317,22 +317,20 @@
 			
 		\subsection{Use of reference architectures and frameworks}
 			\paragraph\indent The frameworks listed here all reduce development time and cost of the system.
-			\newpage
-			The first framework to be used is Bootstrap for styling the Web interface. The reason for this is because Bootstrap makes web styling much easier and faster than just trying to use pure CSS. It also helps a lot with alignment that will help a lot with tables and follows a mobile first and responsive approach, this means that it will be a lot easier to develop a website that works both on mobile devices and desktops.
-			\newline\newline
-			AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. The reason we use AngularJS is because it feaures dependency injection, along with mocking framework for unit testing among other things.
-			AngularJS also features quick prototyping and easy testability.
-			\newline\newline
-			PhoneGap (renamed to Apache Cordova, we will use PhoneGap in this document) will be used as a wrapper for the above website in mobile form. Because the client only needs an interface for an Android app and all major processing and storing will be done on a server, advanced native Android code is not needed. This again reduces development time because a responsive website already exists thanks to Bootstrap and UI Bootstrap. And PhoneGap makes the app cross-platform as a bonus. Finally a lot of plugins exists that can improve the functionality on top of a 'normal' webpage.
-			\newline\newline
-			Ionic framework will be used together with AngularJS and PhoneGap in the place of Bootstrap. This is because Ionic enables much easier GUI design and a more responsive hybrid app. The reasonit will replace Bootstrap for the mobile app is because Bootstrap and Ionic do not play well because of name conflicts.
-			\newline\newline
-			Finally Spring framework will be used on the backend for the server. Because Spring is built on Java EE it means Java can be used for the server. Some advantages this has over normal PHP is that Java is faster than PHP, especially now that the modern JVM is much faster. Java also has better integration support than PHP. And ofcourse the Spring framework makes it much easier to develop the backend and include depenency injection.
+			\begin{itemize}
+				\item Bootstrap for styling the Web interface of the system. Will be used for alignment of the elements ofthe web interface, any alignment for tables (if any) and responsive design so that the  web intergace can be viewed on mobile devices.
+				\item AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. For example will be used for DOM manipulation and data-binding can be used to send data to the server. Most notable and obvious use is when a new user creates an account, angularJS will handle and send the data entred by the user to the server.
+				\item PhoneGap (renamed to Apache Cordova, we will use PhoneGap in this document) will be used as a wrapper for the above website in mobile form. Meaning the web interface will be used and PhoneGap will create a hybrid Android app that communicates with the server and only acts as an interface to enter data.
+				\item Ionic framework will be used together with AngularJS and PhoneGap and replace Bootstrap for the hybrid android app. ionic makes better and responsive apps when used with PhoneGap and requires angularJs. The reason it will replace Bootstrap for the mobile app is because Bootstrap and Ionic do not play well because of name conflicts.
+				\item Spring framework will be mainly used for dependancy injection on the server side of the system. The MVC nature of Spring will also be of good use for the needs of the system. Spring is also some kind of wrapper for Java EE.
+				\item Java EE can be seen as a reference architecture that supports scalability, MVC and dependancy injection. All are needed fo be implemented in the CS Research System.
+			\end{itemize}
+			
 		\subsection{Access and integration channels}
 		
 		\subsection{Technologies}
 			\paragraph\indent
-			Technologies used will be MySQL for the database , it is very light weight and will have sufficient access control for the given product. The server will be a mix of PHP and Java, both will connect to MySQL , the Java will be the host for the android connection and the PHP will handle requests from the web interface.
+			Technologies used will be MySQL for the database , it is very light weight and will have sufficient access control for the given product. The server will be a mix of PHP and Java, both will connect to MySQL , the Java will be the host for the android connection and the PHP will handle requests from the web interface. (Just a suggestion... Java is a bit better than php in some aspects, so I said that we use spring, that uses java. But we can use php for the report generation, by using the TCPDF php class - Charl)
 	\section{Open Issues}	
 		\paragraph\indent	
 		There are currently no open issues.
