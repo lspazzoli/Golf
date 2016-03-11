@@ -90,7 +90,7 @@
 			\paragraph\indent
 				Some quality requirements that have to be considered are:
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item \textbf{Security:} The data that is sent over the internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
+				\item \textbf{Security:} The data that is sent over the Internet should be encrypted and it has been decided to use the Secure Socket Layer (SSL) encryption algorithm.
 				\item \textbf{Reliability:} The reliability of the transfer of the data is dependent on the reliability of the internet connection.
 			\end{list}
 			
@@ -114,15 +114,15 @@
 				\item Users must be able to download a bibliography of papers released in a selected period.
 				\item An Android app must be available that can access the system to make it easier to access the system on the go.			
 				\item Users must create their user profile manually and will not be able to link the system with a web service in order to create their profile.
-				\item No item should ever be deleted in the system. Everything is kept. Old unaccessed data may be archived but never deleted. There needs to be some sort of recovery or backup system that enables a user to restore accidently deleted data.
-				\item The system must be able to handle a max of at least 50 concurrent users as there is a possiblility that at least 50 users may access the system all at once. There will also be an estimate of at least a 1000 users. The system must be able to handle that amount of users.
+				\item No item should ever be deleted in the system. Everything is kept. Old unaccessed data may be archived but never deleted. There needs to be some sort of recovery or backup system that enables a user to restore accidentally deleted data.
+				\item The system must be able to handle a max of at least 50 concurrent users as there is a possibility that at least 50 users may access the system all at once. There will also be an estimate of at least a 1000 users. The system must be able to handle that amount of users.
 			\end{list}
 			\paragraph\indent
 			\textbf{Nice-to-have:}
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
 				\item The system must be lightweight.
 				\item The system must show the completion of a paper in percentage that a user specifies after editing the paper.
-				\item The system may link with Google Calender to synchronise due dates and alerts for the paper a user is busy working on.
+				\item The system may link with Google Calender to synchronize due dates and alerts for the paper a user is busy working on.
 				\item The web interface can be designed to work on mobile phones for those who want to access the system on the go but do not have an Android device.
 			\end{list}
 		
@@ -287,18 +287,18 @@
 					\newline \textbf{Strategy used:}
 					\newline Maintain Backup, Checkpoint Rollback
 					\newline \textbf{Design Patterns:} 
-					\newline Memento design pattern may be used to roll back dayabase to previous state in the event of some type of failure. Visitor Pattern will be used for creating the partial and full backup dumps.
+					\newline Memento design pattern may be used to roll back database to previous state in the event of some type of failure. Visitor Pattern will be used for creating the partial and full backup dumps.
 					\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use, therefore, passwords will be secured using the SHA512 hashing algorithm.
 					\newline \textbf{Strategy used:}
 					\newline Limit access strategy, by using Authentication and Authorization strategies.
 					\newline \textbf{Design Patterns:}
-					\newline Authenticator and Authorization Enforcer Patterns used for managing and deligating the authorizing and authenticating processes of users.
+					\newline Authenticator and Authorization Enforcer Patterns used for managing and delegating the authorizing and authenticating processes of users.
 					\item \textbf{Audibility:} This is measured in terms of is every change noted and logged somewhere. This will be done through means of recording, when a change is made, the system will log the change as well as the user name that submitted the change, therefore everyone will be held accountable.
 					\newline \textbf{Strategy used:}
 					\newline No specific strategy tactic will be used for this
 					\newline \textbf{Design Patterns:}
 					\newline No specific design pattern will be used for this				
-					\item \textbf{Scalability:} There will not be a huge amount of users making use of the system but it is important that if need be every user can make use of the system concurrently. This will be achieved by implementing the system in such a way that it is multi-threaded. In terms of two users trying work on the same paper simultaneously, when a user tries to upload an edited version of the paper, if the version on the system differs from the original document then the user will be alerted that there is a synchronization error and he should update the local version of the document and add the changes. This will avoid data corruption.
+					\item \textbf{Scalability:} There will not be a huge amount of users making use of the system but it is important that if need be every user can make use of the system concurrently. This will be achieved by implementing the system in such a way that it is multi-threaded. In terms of two users trying work on the same documents meta-data simultaneously, when a user tries to upload an edited version of the documents meta-data, if the version on the system differs from the original document then the user will be alerted that there is a synchronization error and he should update the local version of the document and add the changes. This will avoid data corruption.
 					\newline \textbf{Strategy used:}
 					\newline Thread pooling and Use Concurrencies strategies
 					\newline \textbf{Design Patterns:}
@@ -314,8 +314,8 @@
 				\paragraph\indent
 				The Integration and access channel requirements are:
 				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item \textbf{Centre of integration:} This will be the main Server, probably an HTTP/HTTPS Server that will be feeding data to other sub-parts of the system. The main Server will be directly connected to all the Databases. It will be the source of data. To prevent anyone one to connect to the Server password will have to be provided, checks will be done to check if the sub-part of the System is authorised, this could be anyone from outside who will be trying to connect to the server, e.g the Android Application, Client as (Website) and windows application.
-					\item \textbf{sub-parts of the system:} This will be anyone who will be trying to gain access to the Server. The sub-part of the system will have to prove to the server that it is authorised to gain access to the information held by the server. Login details and passwords will be provided to the server to allow access.
+					\item \textbf{Centre of integration:} This will be the main Server, probably an HTTP/HTTPS Server that will be feeding data to other sub-parts of the system. The main Server will be directly connected to all the Databases. It will be the source of data. To prevent anyone one to connect to the Server password will have to be provided, checks will be done to check if the sub-part of the System is authorized, this could be anyone from outside who will be trying to connect to the server, e.g the Android Application, Client as (Website) and windows application.
+					\item \textbf{sub-parts of the system:} This will be anyone who will be trying to gain access to the Server. The sub-part of the system will have to prove to the server that it is authorized to gain access to the information held by the server. Login details and passwords will be provided to the server to allow access.
 					\item \textbf{Protocols to be used(Access channels):} HTTP/HTTPS will be used,  the sub-parts of the system will have to go through the HTTP/HTTPS to gain access to the server. If the subsystem fails to prove to the Server through HTTPS/HTTP it will not be allowed access to the Server's data.
 					\item \textbf{Gaining of data from Server:} The server will contain an API that will allow the sub-parts of the system to gain access of the data through function calls, and authentication will be taking during the communication of the Server and the client(sub-part of the system). To make the security reliable, authentication will have to place regularly.
 				\end{list}
@@ -331,23 +331,23 @@
 			\paragraph{Exception handling}\indent
 			Exceptions should be dealt with as soon as and as best as possible, but since it cannot be afforded that the system crashes there should be some form of "last resort" that attempts to deal with unhandled exceptions in such a way that the system as a whole keep functioning.
 			
-			\paragraph{Passive Redundency}\indent
+			\paragraph{Passive Redundancy}\indent
 			There will be 2 databases that will both contain all the information. This will increase the reliability of the system by having a back up database that can take over at any point when the primary database fails. This will be transparent to the user.
 			
 			\paragraph{Transactions}\indent
 			Changes to the database will be done in transactions that will allow any changes to be rolled back to s checkpoint should an error occur. This will cause atomicity in the system and increase reliability.
 			
 			\paragraph{Security}\indent
-			Encryption to increase security https protocols will be used to transmit data and all private information (like passwords) will be hashed using the SHA512 hashing algorithm.
+			Encryption to increase security HTTPS protocols will be used to transmit data and all private information (like passwords) will be hashed using the SHA512 hashing algorithm.
 			
-			\paragraph{Interatability}\indent
-			In order to increase interatability a modular approach will be taken when implementing the system by using dependency injection as far as possile.
+			\paragraph{Integrability}\indent
+			In order to increase integrability a modular approach will be taken when implementing the system by using dependency injection as far as possible.
 			
 		\subsection{Use of reference architectures and frameworks}
 			\paragraph\indent 
 			\begin{itemize}
-				\item Bootstrap for styling the Web interface of the system. Will be used for alignment of the elements ofthe web interface, any alignment for tables (if any) and responsive design so that the  web intergace can be viewed on mobile devices.
-				\item AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. For example will be used for DOM manipulation and data-binding can be used to send data to the server. Most notable and obvious use is when a new user creates an account, angularJS will handle and send the data entred by the user to the server.
+				\item Bootstrap for styling the Web interface of the system. Will be used for alignment of the elements of the web interface, any alignment for tables (if any) and responsive design so that the  web interface can be viewed on mobile devices.
+				\item AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. For example will be used for DOM manipulation and data-binding can be used to send data to the server. Most notable and obvious use is when a new user creates an account, AngularJS will handle and send the data entered by the user to the server.
 				\item PhoneGap (renamed to Apache Cordova, we will use PhoneGap in this document) will be used as a wrapper for the above website in mobile form. Meaning the web interface will be used and PhoneGap will create a hybrid Android app that communicates with the server and only acts as an interface to enter data.
 				\item Ionic framework will be used together with AngularJS and PhoneGap and replace Bootstrap for the hybrid android app. ionic makes better and responsive apps when used with PhoneGap and requires angularJs. The reason it will replace Bootstrap for the mobile app is because Bootstrap and Ionic do not play well because of name conflicts.
 				\item Spring framework will be mainly used for dependancy injection on the server side of the system. The MVC nature of Spring will also be of good use for the needs of the system. Spring is also some kind of wrapper for Java EE.
@@ -362,7 +362,7 @@
 			The integration channel through which our system will integrate with external systems is a database, which will be able to store data about the users as well as the details of the papers that the users contribute to. The database organises large amounts of data, that is then easier to access, manage and update. An API will also be used so that users from different universities can connect to the system and contribute to any project that they are working on.
 
 			\paragraph\indent
-			The protocol that will be used is the Hypertext Transfer Protocol Secure (HTTPS), because it enables for data to be sent securely through to the server and also because the privacy and integrity of the data that is sent between the server and the system is protected, which is regarded as important as the content of the system should be safe from unauthorised users.
+			The protocol that will be used is the Hypertext Transfer Protocol Secure (HTTPS), because it enables for data to be sent securely through to the server and also because the privacy and integrity of the data that is sent between the server and the system is protected, which is regarded as important as the content of the system should be safe from unauthorized users.
 
 			\paragraph\indent
 			For the integration channel, the technology that will be used for the database is MySql, a database used on the web and that most people are familiar with. It is also easy to use, reliable, fast and it can cater for large applications.
