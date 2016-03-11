@@ -288,7 +288,7 @@
 					\newline Maintain Backup, Checkpoint Rollback
 					\newline \textbf{Design Patterns:} 
 					\newline Memento design pattern may be used to roll back database to previous state in the event of some type of failure. Visitor Pattern will be used for creating the partial and full backup dumps.
-					\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use, therefore, passwords will be secured using the SHA512 hashing algorithm.
+					\item \textbf{Security:} The system needs to be secure from anyone who does not (or should not) have permission to use it, therefore passwords will be secured using the SHA512 hashing algorithm.
 					\newline \textbf{Strategy used:}
 					\newline Limit access strategy, by using Authentication and Authorization strategies.
 					\newline \textbf{Design Patterns:}
@@ -303,7 +303,7 @@
 					\newline Thread pooling and Use Concurrencies strategies
 					\newline \textbf{Design Patterns:}
 					\newline No specific design pattern will be used for this
-					\item \textbf{Maintainability:} Measured against how effectively the system choses to relocate data due to age. When data has been on the system for a predetermined length of time, it will be moved from the main system and relocated to a different (most likely slower) database and if a user wishes to make use of it again it can be called from there.
+					\item \textbf{Maintainability:} Measured against how effectively the system chooses to relocate data due to age. When data has been on the system for a predetermined length of time, it will be moved from the main system and relocated to a different (most likely slower) database and if a user wishes to make use of it again it can be called from there.
 					\newline \textbf{Strategy used:}
 					\newline No specific strategy tactic will be used
 					\newline \textbf{Design Patterns:}
@@ -314,10 +314,10 @@
 				\paragraph\indent
 				The Integration and access channel requirements are:
 				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-					\item \textbf{Centre of integration:} This will be the main Server, probably an HTTP/HTTPS Server that will be feeding data to other sub-parts of the system. The main Server will be directly connected to all the Databases. It will be the source of data. To prevent anyone one to connect to the Server password will have to be provided, checks will be done to check if the sub-part of the System is authorized, this could be anyone from outside who will be trying to connect to the server, e.g the Android Application, Client as (Website) and windows application.
+					\item \textbf{Centre of integration:} This will be the main Server, probably an HTTP/HTTPS Server that will be feeding data to other sub-parts of the system. The main Server will be directly connected to all the Databases. It will be the source of data. To prevent anyone one from connecting to the Server, a password will have to be provided, checks will be done to check if the sub-part of the System is authorized, this could be anyone from outside who will be trying to connect to the server, e.g the Android Application, Client as (Website) and windows application.
 					\item \textbf{sub-parts of the system:} This will be anyone who will be trying to gain access to the Server. The sub-part of the system will have to prove to the server that it is authorized to gain access to the information held by the server. Login details and passwords will be provided to the server to allow access.
 					\item \textbf{Protocols to be used(Access channels):} HTTP/HTTPS will be used,  the sub-parts of the system will have to go through the HTTP/HTTPS to gain access to the server. If the subsystem fails to prove to the Server through HTTPS/HTTP it will not be allowed access to the Server's data.
-					\item \textbf{Gaining of data from Server:} The server will contain an API that will allow the sub-parts of the system to gain access of the data through function calls, and authentication will be taking during the communication of the Server and the client(sub-part of the system). To make the security reliable, authentication will have to place regularly.
+					\item \textbf{Gaining of data from Server:} The server will contain an API that will allow the sub-parts of the system to gain access of the data through function calls, and authentication will be taking during the communication of the Server and the client(sub-part of the system). To make the security reliable, authentication will have to take place regularly.
 				\end{list}
 			
 			\subsubsection{Architectural constraints}
@@ -329,13 +329,13 @@
 			To better manage resource intensive tasks thread pooling will be used. There will be an object that receives all tasks and allocates them to a specified thread when a thread becomes available.
 			
 			\paragraph{Exception handling}\indent
-			Exceptions should be dealt with as soon as and as best as possible, but since it cannot be afforded that the system crashes there should be some form of "last resort" that attempts to deal with unhandled exceptions in such a way that the system as a whole keep functioning.
+			Exceptions should be dealt with as soon as and as best as possible, but since it cannot be afforded that the system crashes there should be some form of "last resort" that attempts to deal with unhandled exceptions in such a way that the system as a whole keeps functioning.
 			
 			\paragraph{Passive Redundancy}\indent
 			There will be 2 databases that will both contain all the information. This will increase the reliability of the system by having a back up database that can take over at any point when the primary database fails. This will be transparent to the user.
 			
 			\paragraph{Transactions}\indent
-			Changes to the database will be done in transactions that will allow any changes to be rolled back to s checkpoint should an error occur. This will cause atomicity in the system and increase reliability.
+			Changes to the database will be done in transactions that will allow any changes to be rolled back to a checkpoint should an error occur. This will cause atomicity in the system and increase reliability.
 			
 			\paragraph{Security}\indent
 			Encryption to increase security HTTPS protocols will be used to transmit data and all private information (like passwords) will be hashed using the SHA512 hashing algorithm.
@@ -347,11 +347,11 @@
 			\paragraph\indent 
 			\begin{itemize}
 				\item Bootstrap for styling the Web interface of the system. Will be used for alignment of the elements of the web interface, any alignment for tables (if any) and responsive design so that the  web interface can be viewed on mobile devices.
-				\item AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. For example will be used for DOM manipulation and data-binding can be used to send data to the server. Most notable and obvious use is when a new user creates an account, AngularJS will handle and send the data entered by the user to the server.
+				\item AngularJS will be used for the front end of the website along with bootstrap by using UI Bootstrap. For example, it will be used for DOM manipulation and data-binding can be used to send data to the server. Most notable and obvious use is when a new user creates an account, AngularJS will handle and send the data entered by the user to the server.
 				\item PhoneGap (renamed to Apache Cordova, we will use PhoneGap in this document) will be used as a wrapper for the above website in mobile form. Meaning the web interface will be used and PhoneGap will create a hybrid Android app that communicates with the server and only acts as an interface to enter data.
 				\item Ionic framework will be used together with AngularJS and PhoneGap and replace Bootstrap for the hybrid android app. ionic makes better and responsive apps when used with PhoneGap and requires angularJs. The reason it will replace Bootstrap for the mobile app is because Bootstrap and Ionic do not play well because of name conflicts.
 				\item Spring framework will be mainly used for dependancy injection on the server side of the system. The MVC nature of Spring will also be of good use for the needs of the system. Spring is also some kind of wrapper for Java EE.
-				\item Java EE can be seen as a reference architecture that supports scalability, MVC and dependancy injection. All are needed fo be implemented in the CS Research System.
+				\item Java EE can be seen as a reference architecture that supports scalability, MVC and dependancy injection. All are needed to be implemented in the CS Research System.
 			\end{itemize}
 			
 		\subsection{Access and integration channels}
