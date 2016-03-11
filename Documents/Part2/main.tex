@@ -311,6 +311,14 @@
 				\end{list}
 			
 			\subsubsection{Integration and access channel requirements}
+				\paragraph\indent
+				The Integration and access channel requirements are:
+				\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+					\item \textbf{Centre of integration:} This will be the main Server, probably an HTTP/HTTPS Server that will be feeding data to other sub-parts of the system. The main Server will be directly connected to all the Databases. It will be the source of data. To prevent anyone one to connect to the Server password will have to be provided, checks will be done to check if the sub-part of the System is authorised, this could be anyone from outside who will be trying to connect to the server, e.g the Android Application, Client as (Website) and windows application.
+					\item \textbf{sub-parts of the system:} This will be anyone who will be trying to gain access to the Server. The sub-part of the system will have to prove to the server that it is authorised to gain access to the information held by the server. Login details and passwords will be provided to the server to allow access.
+					\item \textbf{Protocols to be used(Access channels):} HTTP/HTTPS will be used,  the sub-parts of the system will have to go through the HTTP/HTTPS to gain access to the server. If the subsystem fails to prove to the Server through HTTPS/HTTP it will not be allowed access to the Server's data.
+					\item \textbf{Gaining of data from Server:} The server will contain an API that will allow the sub-parts of the system to gain access of the data through function calls, and authentication will be taking during the communication of the Server and the client(sub-part of the system). To make the security reliable, authentication will have to place regularly.
+				\end{list}
 			
 			\subsubsection{Architectural constraints}
 			
