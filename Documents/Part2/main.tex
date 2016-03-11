@@ -323,7 +323,25 @@
 			\subsubsection{Architectural constraints}
 			
 		\subsection{Architectural patterns or styles}
-		
+			\paragraph\indent
+			Architectural patterns are usually seen as commonalities at a higher level than design patterns. An Architectural pattern such as PAC (Presentation-Abstraction-Control), MVP (Model View Presenter), or the MVC (Model View Control) can be used to mechanisms of a system. MVC would be the preferred Architecture as it allows a user to enter input or perform a state query after then manipulation takes place and in return the result would be displayed for the user to see.
+			
+			\paragraph\indent
+			MVC Architectural pattern:
+			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
+				\item Model – Here the data that was entered by the user would be internally processed.
+				\item View - This is the interface that would allow the user to enter data/information into the system and as a result the reflected changes would be seen by the user.
+				\item Controller – User entered data would be received by the controller and all other application flow would be managed by the controller.
+			\end{list}
+			
+			\paragraph\indent
+			Layering would consist of three levels - Client, Application Logic, and the Database Management System, as in the figure below:
+			\begin{figure}[!h]
+				\includegraphics[width=\linewidth]{Pictures/Layering design.png}
+				\caption{Layering of the system}
+			\end{figure}
+			
+			
 		\subsection{Architectural tactics or strategies}
 			\paragraph{Performance}\indent
 			To better manage resource intensive tasks thread pooling will be used. There will be an object that receives all tasks and allocates them to a specified thread when a thread becomes available.
