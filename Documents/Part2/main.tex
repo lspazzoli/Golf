@@ -336,9 +336,9 @@
 			\paragraph\indent
 			MVC Architectural pattern:
 			\begin{list}{$\bullet$}{\leftmargin=1.5cm \itemindent=0em}
-				\item Model – Here the data that was entered by the user would be internally processed.
+				\item Model ï¿½ Here the data that was entered by the user would be internally processed.
 				\item View - This is the interface that would allow the user to enter data/information into the system and as a result the reflected changes would be seen by the user.
-				\item Controller – User entered data would be received by the controller and all other application flow would be managed by the controller.
+				\item Controller ï¿½ User entered data would be received by the controller and all other application flow would be managed by the controller.
 			\end{list}
 			
 			\paragraph\indent
@@ -368,6 +368,9 @@
 			\paragraph{Integrability}\indent
 			In order to increase integrability a modular approach will be taken when implementing the system by using dependency injection as far as possible.
 			
+			\paragraph{Availability}\indent
+			Fault detection will be accomplished by ping echo and heartbeats to make sure the system is up and running. Should a fault occur recovery reintroduction will be accomplished by using shadows, state resychronization and rollbacks. Pervention can be done by means of transactions and process monitoring.
+			
 		\subsection{Use of reference architectures and frameworks}
 			\paragraph\indent 
 			\begin{itemize}
@@ -394,7 +397,7 @@
 
 		\subsection{Technologies}
 			\paragraph\indent
-			Technologies used will be MySQL for the database , it is very light weight and will have sufficient access control for the given product. The server will be a mix of PHP and Java, both will connect to MySQL , the Java will be the host for the android connection and the PHP will handle requests from the web interface.
+			Technologies used will be MySQL for the database, it is very light weight and will have sufficient access control for the given product. The server will be a mix of PHP and Java, both will connect to MySQL. Java will be the host for the android connection and PHP will handle requests from the web interface.
 	\section{Open Issues}	
 		\paragraph\indent	
 		There are currently no open issues.
